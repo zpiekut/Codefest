@@ -1,4 +1,42 @@
 /* ---------------------------------------------------------------------- 
+>>> Added at Codefest
+-------------------------------------------------------------------------
+*/
+
+.center {
+  text-align: center;
+  margin: 0 auto;
+}
+
+.text-left { 
+    text-align: left;
+}
+
+.text-right { 
+    text-align: right;
+}
+
+.center-text {
+  text-align: center;
+}
+.hidden {
+  display: none;
+}
+
+
+/*Thicken up calendar buttons -- important tag is a shotcut -- clean-up after Codefest */
+.fc-button {
+  padding-left: 1em !important;
+  padding-right: 1em !important;
+  text-transform: capitalize !important;
+}
+
+.fc-event {
+  padding-top: 0.7em !important;
+  padding-bottom: 0.7em !important;
+}
+
+/* ---------------------------------------------------------------------- 
 >>> TABLE OF CONTENT
 -------------------------------------------------------------------------
 1 - Basic Elements & Classes
