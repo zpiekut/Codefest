@@ -95,24 +95,34 @@
 						<!-- start: PAGE HEADER -->
 						<!-- start: TOOLBAR -->
 						<div class="toolbar row">
-							<div class="col-sm-6 col-xs-12">
+						<div class="col-sm-1 hidden-xs">
+							<img src="favicon.png" style="max-height: 60px; padding-top: 1em; float:right;">
+						</div>
+						
+							<div class="col-sm-5 col-xs-8">
 								<div class="page-header">
 									<h1>Events Calendar <small>United Way - Pittsburgh Literacy Council</small></h1>
 								</div>
 							</div>
-							<div class="col-sm-6 hidden-xs">
+							<div class="col-sm-6 col-xs-4">	
+
+								<div class="hidden-xs"><!--hide on small screens-->
 								<a href="#" class="back-subviews">
-									<i class="fa fa-chevron-left"></i> BACK
-								</a>
-								<a href="#" class="close-subviews">
 									<i class="fa fa-times"></i> CLOSE
+								</a>
+								</div>
+
+
+								<a href="#" class="close-subviews">
+									<i class="fa fa-chevron-left"></i> BACK
 								</a>
 								<div class="toolbar-tools pull-right">
 									<!-- start: TOP NAVIGATION MENU -->
 									<ul class="nav navbar-right">
 										<!-- start: TO-DO DROPDOWN -->
 
-										<li class="dropdown">
+
+										<li class="dropdown hidden-xs">
 											<a data-toggle="dropdown" data-hover="dropdown" class="dropdown-toggle" data-close-others="true" href="#">
 												<span class="messages-count badge badge-default hide">3</span> <i class="fa fa-envelope"></i> ALERTS
 											</a>
@@ -148,6 +158,9 @@
 												</li>
 											</ul>
 										</li>
+										
+
+
 										<li class="menu-search">
 											<a href="#">
 												<i class="fa fa-search"></i> SEARCH
@@ -318,6 +331,8 @@
 					<div class="row">
 						<div class="col-md-12">
 							<h2 class="event-title"></h2>
+
+<!-- Removed - no need for this admin stuff on read only
 							<div class="btn-group options-toggle pull-right">
 								<button class="btn dropdown-toggle btn-transparent-grey" data-toggle="dropdown">
 									<i class="fa fa-cog"></i>
@@ -336,11 +351,15 @@
 									</li>
 								</ul>
 							</div>
+
+
+-->
+
 						</div>
-						<div class="col-md-6">
+<!--						<div class="col-md-6">
 							<span class="event-category event-cancelled">Cancelled</span>
 							<span class="event-allday"><i class='fa fa-check'></i> All-Day</span>
-						</div>
+-->						</div>
 						<div class="col-md-12">
 							<div class="event-start">
 								<div class="event-day"></div>
@@ -624,6 +643,7 @@
 						<div class="col-md-12">
 							<div class="event-content"></div>
 						</div>
+
 					</div>
 				</div>
 			</div>

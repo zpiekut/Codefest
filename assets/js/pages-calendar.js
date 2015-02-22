@@ -139,7 +139,6 @@ var Calendar = function() {
                 }
             },
 */
-
             selectable: true,
             selectHelper: true,
 /*            select: function(start, end, allDay) {            // Allows you to create new events
@@ -405,7 +404,12 @@ var Calendar = function() {
                     }
                 }
 
-                $("#readFullEvent .event-content").empty().html(demoCalendar[i].content);
+                if (demoCalendar[i].content) {
+                    $("#readFullEvent .event-content").empty().html(demoCalendar[i].content);
+                } 
+                else {
+                    $("#readFullEvent .event-content").empty().text("There's no additional information about this event.");
+                }
 
                 break;
             }
