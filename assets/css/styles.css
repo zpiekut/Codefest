@@ -69,7 +69,7 @@
   padding: 1em !important;
 }
 
-.fa-envelope, .fa-search, .fa-chevron-left, .fa-chevron-right, .fa-chevron-up {
+.fa-envelope, .fa-search, .fa-chevron-left, .fa-chevron-right, .fa-chevron-up, .fa-times {
   color: orange !important;
 }
 
@@ -86,6 +86,11 @@
 footer {
   background-color: white !important;
   color: orange !important;
+}
+
+.fc-event:hover {
+  background-color: #f6d096 !important;
+  cursor: hand;
 }
 
 /* ---------------------------------------------------------------------- 
