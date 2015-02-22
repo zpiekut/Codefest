@@ -94,7 +94,6 @@ var Calendar = function() {
             googleCalendarApiKey: 'AIzaSyCgiOA58kHb8WX9XPEVNRmUkiIv8-sJ9yI',    // KidsPGH SERVER key -- UPDATE after codefest
 
             editable: false,
-            eventLimit: false, // allow "more" link when too many events
             droppable: false, // this allows things to be dropped onto the calendar !!!
 /*            drop: function(date, allDay) { // this function is called when something is dropped
 
