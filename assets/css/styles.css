@@ -69,7 +69,7 @@
   padding: 1em !important;
 }
 
-.fa-envelope, .fa-search, .fa-chevron-left, .fa-chevron-right {
+.fa-envelope, .fa-search, .fa-chevron-left, .fa-chevron-right, .fa-chevron-up {
   color: orange !important;
 }
 
@@ -81,6 +81,11 @@
   font-weight: 700 !important;
   font-size: 1.1em !important;
   color: orange;
+}
+
+footer {
+  background-color: white !important;
+  color: orange !important;
 }
 
 /* ---------------------------------------------------------------------- 
