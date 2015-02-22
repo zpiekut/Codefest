@@ -93,6 +93,10 @@ footer {
   cursor: hand;
 }
 
+.fc-highlight { /* when user is selecting cells */
+  background: #f6d096 !important;
+}
+
 /* ---------------------------------------------------------------------- 
 >>> TABLE OF CONTENT
 -------------------------------------------------------------------------
