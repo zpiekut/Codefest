@@ -69,8 +69,12 @@
   padding: 1em !important;
 }
 
-.fa-envelope, .fa-search {
+.fa-envelope, .fa-search, .fa-chevron-left, .fa-chevron-right {
   color: orange !important;
+}
+
+.fc-today-button, .fc-month-button, .fc-agendaWeek-button, .fc-agendaDay-button {
+  font-weight: 700 !important;
 }
 
 /* ---------------------------------------------------------------------- 
