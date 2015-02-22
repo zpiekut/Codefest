@@ -5,6 +5,7 @@ var Calendar = function() {
     var defaultRange = new Object;
     defaultRange.start = moment();
     defaultRange.end = moment().add('days', 1);
+
     //Calendar
     var setFullCalendarEvents = function(json) {
         var date = new Date();
@@ -25,20 +26,6 @@ var Calendar = function() {
             allDay: false,
             content: 'Out to design conference'
         }, {
-            title: 'Bootstrap Seminar',
-            start: new Date(y, m, d - 5),
-            end: new Date(y, m, d - 2),
-            className: 'event-offsite',
-            category: 'Off-site work',
-            allDay: true
-        }, {
-            title: 'Lunch with Nicole',
-            start: new Date(y, m, d - 3, 12, 0),
-            end: new Date(y, m, d - 3, 12, 30),
-            className: 'event-generic',
-            category: 'Generic',
-            allDay: false
-        }, {
             title: 'Corporate Website Redesign',
             start: new Date(y, m, d + 5),
             end: new Date(y, m, d + 10),
@@ -49,6 +36,7 @@ var Calendar = function() {
 */
 
     };
+
     //function to initiate Full Calendar
     var runFullCalendar = function() {
         $(".add-event").off().on("click", function() {
@@ -88,8 +76,6 @@ var Calendar = function() {
         var y = date.getFullYear();
         var form = '';
 
-
-
         $('#full-calendar').fullCalendar({
             buttonIcons: {
                 prev: 'fa fa-chevron-left',
@@ -100,8 +86,8 @@ var Calendar = function() {
                 center: 'title',
                 right: 'month,agendaWeek,agendaDay'
             },
-            events: demoCalendar,
-//            events: 'kidspgh@gmail.com',
+//            events: demoCalendar,
+            events: 'kidspgh@gmail.com',
 
 //          googleCalendarApiKey: 'AIzaSyDcnW6WejpTOCffshGDDb4neIrXVUA1EAE',    // Demo key, will not work in PROD
 //          googleCalendarApiKey: 'AIzaSyBwRuPh7F-c5NMoTJuxML7N2wZazXvGhHQ',    // KidsPGH key (localhost only)
