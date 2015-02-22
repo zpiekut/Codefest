@@ -5169,7 +5169,7 @@ div.timeline .column_center .timeline_element:before, div.timeline .column_cente
   font-size: 6px;
   line-height: 16px;
   padding-right: 5px;
-  color: #00AEFF;
+  color: #e99f11;
   float: left;
 }
 
@@ -5194,7 +5194,7 @@ div.timeline .column_center .timeline_element:before, div.timeline .column_cente
 }
 
 .event-generic .fc-event-title:before, .event-category.event-generic:before {
-  color: #00AEFF;
+  color: #e99f11;
 }
 
 .event-job .fc-event-title:before, .event-category.event-job:before {

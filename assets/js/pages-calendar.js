@@ -411,6 +411,45 @@ var Calendar = function() {
                     $("#readFullEvent .event-content").empty().text("There's no additional information about this event.");
                 }
 
+
+                    demoCalendar[i].address = "Pittsburgh, PA";
+
+                    console.log("Add a map?");
+
+                if (demoCalendar[i].address) {
+
+                    console.log("Adding a map: " + demoCalendar[i].address);
+
+                    var map = new GMaps({
+                        el: '#event-map',
+                        lat: -40.4417,
+                        lng: -80.0000
+                      });
+
+                    GMaps.geocode({
+                      address: (demoCalendar[i].address).trim(),
+                      callback: function(results, status){
+                        if(status=='OK'){
+                          var latlng = results[0].geometry.location;
+                          map.setCenter(latlng.lat(), latlng.lng());
+                          map.addMarker({
+                            lat: latlng.lat(),
+                            lng: latlng.lng(),
+                            infoWindow: {
+                              content: demoCalendar[i].address
+                            }
+                          });
+                        }
+                      }
+                    });
+
+                }
+
+// ---- MAPS ------------------------------------------
+
+
+
+
                 break;
             }
 
@@ -769,3 +808,4 @@ function injectQsComponent(url, component) {
 
 
 });
+

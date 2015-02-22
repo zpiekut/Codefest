@@ -371,10 +371,22 @@
 						<div class="col-md-12">
 							<div class="event-content"></div>
 						</div>
+
+
+						<div class="col-md-12">
+							<div id="event-map" class="event-map"></div>
+						</div>
+
 					</div>
 				</div>
 			</div>
 			<!-- end: SUBVIEW FOR CALENDAR PAGE -->
+
+
+
+
+
+
 			<!-- start: SUBVIEW SAMPLE CONTENTS -->
 			<!-- *** NEW NOTE *** -->
 			<div id="newNote">
@@ -843,6 +855,9 @@
 		<!-- start: CORE JAVASCRIPTS  -->
 		<script src="assets/js/main.js"></script>
 		<!-- end: CORE JAVASCRIPTS  -->
+		<script src="http://maps.google.com/maps/api/js?sensor=true"></script>
+		<script src="assets/plugins/gmaps/gmaps.js"></script>		<!-- Adding maps -->
+		
 		<script>
 			jQuery(document).ready(function() {
 				Main.init();
