@@ -6,13 +6,16 @@ var Calendar = function() {
     defaultRange.start = moment();
     defaultRange.end = moment().add('days', 1);
     //Calendar
-    var setFullCalendarEvents = function() {
+    var setFullCalendarEvents = function(json) {
         var date = new Date();
         dateToShow = date;
         var d = date.getDate();
         var m = date.getMonth();
         var y = date.getFullYear();
 
+        demoCalendar = json;
+
+/*
         demoCalendar = [{
             title: 'CodeFest!!',
             start: new Date(y, m, d, 20, 0),
@@ -43,6 +46,8 @@ var Calendar = function() {
             category: 'To Do',
             allDay: true
         }];
+*/
+
     };
     //function to initiate Full Calendar
     var runFullCalendar = function() {
@@ -95,8 +100,8 @@ var Calendar = function() {
                 center: 'title',
                 right: 'month,agendaWeek,agendaDay'
             },
-//            events: demoCalendar,
-            events: 'kidspgh@gmail.com',
+            events: demoCalendar,
+//            events: 'kidspgh@gmail.com',
 
 //          googleCalendarApiKey: 'AIzaSyDcnW6WejpTOCffshGDDb4neIrXVUA1EAE',    // Demo key, will not work in PROD
 //          googleCalendarApiKey: 'AIzaSyBwRuPh7F-c5NMoTJuxML7N2wZazXvGhHQ',    // KidsPGH key (localhost only)
@@ -141,6 +146,7 @@ var Calendar = function() {
 */
             selectable: true,
             selectHelper: true,
+            eventLimit: 5,
 /*            select: function(start, end, allDay) {            // Allows you to create new events
                 defaultRange.start = moment(start);
                 defaultRange.end = moment(start).add('hours', 1);
@@ -612,8 +618,8 @@ var Calendar = function() {
 
     };
     return {
-        init: function() {
-            setFullCalendarEvents();
+        init: function(json) {                  // Codefest: added json here from initial call on index.html
+            setFullCalendarEvents(json);
             runFullCalendar();
 
             runFullCalendarValidation();

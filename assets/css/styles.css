@@ -77,6 +77,12 @@
   font-weight: 700 !important;
 }
 
+.fc-more {
+  font-weight: 700 !important;
+  font-size: 1.1em !important;
+  color: orange;
+}
+
 /* ---------------------------------------------------------------------- 
 >>> TABLE OF CONTENT
 -------------------------------------------------------------------------
